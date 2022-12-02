@@ -12,8 +12,6 @@ let operators = {
     '*' : (a,b) => a*b,
     '/' : (a,b) => a/b,
 }
-
-
 /**
  * This function can be used to solve basic arithmatic
  * by passing parameters into the operators object
@@ -22,9 +20,10 @@ function operate(num1, operation, num2){
     if (operation in operators){
         Number(num1);
         Number(num2);
-        return operators[operation](num1, num2)
+        console.log(num1, typeof num1);
+        console.log(num2, typeof num1);
+        return operators[operation](num1, num2);
     }
 }
 
-
-console.log(operate('20',"/",'5'));
+console.log(operate(20,'+', 5));
