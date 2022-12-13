@@ -26,6 +26,23 @@
     border: 2px solid rgb(0, 191, 255) ;
 }
 
+#digit, #zeroDigit {
+    background-color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 1px auto;
+    width: 75px;
+    border-radius: 30px;
+    transition: ease-out 0.3s;
+}
+#zeroDigit {
+    width: 240px;
+}
+
+#zeroDigit:hover{
+    box-shadow: inset 240px 0 0 0 rgb(80, 191, 255);
+}
+
 #operatorsIcon{
     display: flex;
     flex-flow: column;
@@ -44,7 +61,7 @@
     transition: ease-out 0.3s;
 }
 
-#add:hover, #subtract:hover, #multiply:hover, #divide:hover{
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover, #digit:hover{
     box-shadow: inset 75px 0 0 0 rgb(80, 191, 255);
 }
 
