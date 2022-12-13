@@ -34,6 +34,20 @@
     border: 2px solid rgb(187, 255, 0) ;
 }
 
+#add, #subtract, #multiply, #divide{
+    background-color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 1px auto;
+    width: 75px;
+    border-radius: 30px;
+    transition: ease-out 0.3s;
+}
+
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover{
+    box-shadow: inset 75px 0 0 0 rgb(80, 191, 255);
+}
+
 #evaluate{
     /*display: flex;*/
     height: 100px;
