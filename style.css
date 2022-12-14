@@ -1,38 +1,54 @@
 #calc{
     /*display: flex;*/
-    height: 600px;
+    height: 500px;
     width: 400px;
-    border: 2px solid blue ;
+    /*border: 2px solid blue ;*/
     margin: auto;
+
 }
 
 #display{
     display: flex;
-    height: 100px;
-    width: 300px;
-    border: 2px solid rgb(0, 255, 204) ;
-}
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: rgb(188, 191, 194);
+    height: 70px;
+    width: auto;
+    font-size: 40px;
+    font-weight: 700;
+    /*border: 2px solid rgb(0, 255, 204) ;*/
+    border-bottom: 2px solid rgb(0, 0, 0) ;
 
+}
+/*Container for the number pad and operator buttons*/
 #userInputs{
     display: flex;
-    height: 300px;
-    width: 390px;
-    border: 2px solid rgb(255, 85, 0) ;
+    background-color: rgb(188, 191, 194);
+    justify-content: center;
+    padding: 15px 0px 20px;
+    height: auto;
+    width: auto;
+    /*border: 2px solid rgb(255, 85, 0) ;*/
+    border-bottom: 2px solid rgb(0, 0, 0) ;
 }
 #numIcon{
-    /*display: flex;*/
-    height: 250px;
-    width: 250px;
-    border: 2px solid rgb(0, 191, 255) ;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: auto;
+    margin: 0px 20px;
+    /*border: 2px solid rgb(0, 191, 255) ;*/
 }
 
+/*Zero digit button has a unique ID so that its width can be unique*/
 #digit, #zeroDigit {
     background-color: aliceblue;
     font-size: 40px;
     font-weight: 700;
     margin: 1px auto;
     width: 75px;
-    border-radius: 30px;
+    border-radius: 50px;
+    margin: 3px;
     transition: ease-out 0.3s;
 }
 #zeroDigit {
@@ -46,9 +62,9 @@
 #operatorsIcon{
     display: flex;
     flex-flow: column;
-    height: 250px;
-    width: 100px;
-    border: 2px solid rgb(187, 255, 0) ;
+    margin: 4px;
+    
+   /* border: 2px solid rgb(187, 255, 0) ;*/
 }
 
 #add, #subtract, #multiply, #divide{
@@ -66,8 +82,32 @@
 }
 
 #evaluate{
-    /*display: flex;*/
+    display: flex;
+    background-color: rgb(188, 191, 194);
     height: 100px;
-    width: 300px;
-    border: 2px solid rgb(0, 191, 255) ;
+    width: auto;
+    /*border: 2px solid rgb(0, 191, 255) ;*/
+}
+
+#clear, #equals{
+    background-color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px auto;
+    border-radius: 30px;
+    transition: ease-out 0.3s;
+}
+
+#clear{
+    width: 190px;
+}
+#clear:hover{
+    box-shadow: inset 190px 0 0 0 rgb(80, 191, 255);
+}
+
+#equals{
+    width: 90px;
+}
+#equals:hover{
+    box-shadow: inset 90px 0 0 0 rgb(80, 191, 255);
 }
