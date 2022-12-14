@@ -41,7 +41,7 @@
 }
 
 /*Zero digit button has a unique ID so that its width can be unique*/
-#digit, #zeroDigit {
+.digit, #zeroDigit {
     background-color: aliceblue;
     font-size: 40px;
     font-weight: 700;
