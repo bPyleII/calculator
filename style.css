@@ -40,8 +40,7 @@
     /*border: 2px solid rgb(0, 191, 255) ;*/
 }
 
-/*Zero digit button has a unique ID so that its width can be unique*/
-.digit, #zeroDigit {
+.digit{
     background-color: aliceblue;
     font-size: 40px;
     font-weight: 700;
@@ -51,6 +50,12 @@
     margin: 3px;
     transition: ease-out 0.3s;
 }
+
+.digit:hover {
+    box-shadow: inset 75px 0 0 0 rgb(80, 191, 255);
+}
+
+/*Zero digit button has a unique ID so that its width can be unique*/
 #zeroDigit {
     width: 240px;
 }

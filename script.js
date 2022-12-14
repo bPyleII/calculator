@@ -1,3 +1,21 @@
+//get and HTML collection of elements with the class name digit and then create an array from it
+let numBtn = Array.from(document.getElementsByClassName('digit'));
+let displayNum = document.getElementById('display');
+
+
+//iterate through each array item to add and click event listener
+numBtn.forEach(item => {
+  item.addEventListener('click', showDisplay);
+});
+
+
+function showDisplay(e){
+     console.log(e.target.textContent);
+     //change the text content of display to show the number of the button clicked
+     displayNum.textContent = e.target.textContent;
+};
+
+
 
 /**
  * The operators object can be used to complete an arithmeic operation
@@ -24,5 +42,4 @@ function operate(num1, operation, num2){
     }
 }
 
-console.log(operate(20,'+', 5));
-console.log(operate(8,'*', 7));
+
