@@ -1,13 +1,24 @@
 //get and HTML collection of elements with the class name digit and then create an array from it
 let numBtn = Array.from(document.getElementsByClassName('digit'));
+let opsBtn = Array.from(document.getElementsByClassName('opsBtn'));
 let displayNum = document.getElementById('display');
 displayNum.textContent = '0';
 let userNum;
-
+let operation;
 
 const clearBtn = document.getElementById('clear');
 
-//iterate through each array item to add and click event listener
+//iterate through each number button array item to add a click event listener
+opsBtn.forEach(item =>{
+    item.addEventListener('click', ops);
+});
+
+function ops(e){
+    operation = e.target.textContent;
+    console.log(operation)
+};
+
+//iterate through each number button array item to add a click event listener
 numBtn.forEach(item => {
   item.addEventListener('click', showDisplay);
 });
