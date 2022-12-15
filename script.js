@@ -3,6 +3,7 @@ let numBtn = Array.from(document.getElementsByClassName('digit'));
 let displayNum = document.getElementById('display');
 displayNum.textContent = '0';
 
+
 const clearBtn = document.getElementById('clear');
 
 //iterate through each array item to add and click event listener
@@ -12,17 +13,17 @@ numBtn.forEach(item => {
 
 
 function showDisplay(e){
-     console.log(e.target.textContent);
      //change the text content of display to show the number of the button clicked
-     //displayNum.textContent = '';
-
-     displayNum.textContent += e.target.textContent;
-     console.log(displayNum.textContent);
+     if (displayNum.textContent == '0'){
+        displayNum.textContent = e.target.textContent;
+        
+     }else {displayNum.textContent += e.target.textContent;}
 };
 
 //clear the screen and reset to 0
 clearBtn.addEventListener('click', () => {
     displayNum.textContent = '0';
+    console.log(displayNum.textContent);
 });
 
 
