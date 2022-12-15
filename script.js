@@ -2,6 +2,7 @@
 let numBtn = Array.from(document.getElementsByClassName('digit'));
 let displayNum = document.getElementById('display');
 displayNum.textContent = '0';
+let userNum;
 
 
 const clearBtn = document.getElementById('clear');
@@ -18,6 +19,9 @@ function showDisplay(e){
         displayNum.textContent = e.target.textContent;
         
      }else {displayNum.textContent += e.target.textContent;}
+
+     userNum = displayNum.textContent;
+     console.log(userNum);
 };
 
 //clear the screen and reset to 0
